@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "3507c8ee-0196-47ba-9a55-c666c8ef9dbb",
+		"name": "ticketbooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38031013"
+	},
+	"item": [
+		{
+			"name": "new data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Viky Arthya 3\",\r\n    \"email\": \"viky3@example.com\",\r\n    \"confirm_email\": \"viky3@example.com\",\r\n    \"phone\": \"1234567890\",\r\n    \"date\": \"2024-11-20\",\r\n    \"number_of_ticket\": 2,\r\n    \"message\": \"Please reserve two tickets.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/booking/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"viky  2\",\r\n    \"email\": \"viky2@example.com\",\r\n    \"confirm_email\": \"viky2@example.com\",\r\n    \"phone\": \"0987654321\",\r\n    \"date\": \"2024-11-22\",\r\n    \"number_of_ticket\": 3,\r\n    \"message\": \"Updated message for three tickets.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/booking/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/booking/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
